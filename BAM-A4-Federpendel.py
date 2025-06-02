@@ -55,3 +55,19 @@ o_m_eff_zeich=max(abs(m_eff_best_zeich-m_eff_min_zeich),abs(m_eff_max_zeich-m_ef
 
 #Vergleich der Federkonstante:
 n_gleich=(2*x_max_stat/T_f)*(o_Stoppuhr/o_T_f) #Benötigte Anzahl für gleiche Genauigkeit
+
+#Ausgabe
+print('Statische Methode:')
+print('Fehler der Steigung: '+ o_s_best_stat)
+print('Federhärte:'+ 'Zeichnerich: ('+D_stat_zeich+'+/-'+o_D_stat_zeich+')N/m   Rechnerisch: ('+D_stat_zeich+'+/-'+o_D_stat_zeich+')N/m')
+print()
+print('Dynamische Methode:')
+print('Fehler der Steigung: '+ o_s_best_dym)
+print('Federhärte:'+ 'Zeichnerich: ('+D_dym_zeich+'+/-'+o_D_dym_zeich+')N/m   Rechnerisch: ('+D_dym_zeich+'+/-'+o_D_dym_zeich+')N/m')
+print()
+print('Effektive Masse:')
+print('Fehler der Zeichnerischen effektiven Masse:'+o_m_eff_zeich)
+print('Rechnerisch bestimmte Effektiven Masse: ('+m_eff_rech+'+/-'+o_m_eff_rech+')kg')
+print()
+print('Vergleich Konstante:')
+print('Anzahl der gemessenen Schwingungen für gleichen Fehler:'+n_gleich)

@@ -4,9 +4,9 @@ import math
 g=9.80665 #Ortsfaktor g in m*s^-2 Fehlerfrei nach Walcher A1.2
 
     #Eingabe der Geräte Fehler
-o_Waage=10**-4 #Messfehler der Wage in kg
-o_Stoppuhr=0.2 #Messfehler der Stoppuhr in s
-o_Messleiste=10**-3 #Messfehker der Messleiste in m
+o_Waage=0 #Messfehler der Wage in kg
+o_Stoppuhr=0 #Messfehler der Stoppuhr in s
+o_Messleiste=0 #Messfehker der Messleiste in m
 
     #Eingabe Messwerte bzw. aus Zeichnung abgelesenen statische Methode
 x_max_stat=0 #Maximale Auslenkungen in m

@@ -9,7 +9,7 @@ def linear_regression(x_i, y_i, o):
         s_x2= x_i[i]*x_i[i]+s_x2
     h1=N*s_x2-(s_x)**2
     a=(s_x2*s_y-s_x*s_xy)/h1
-    o_a=(o**2)*s_x2/h1
+    o_a=((o**2)*s_x2/h1)**0.5
     b=(N*s_xy-s_x*s_y)/h1
-    o_b=N*(o**2)*h1
+    o_b=(N*(o**2)*h1)**0.5
     return (a, o_a ,b, o_b)
